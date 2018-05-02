@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.siteurl.www.trendzcrm.Login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="27dp"
+        android:id="@+id/wst1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/header"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_below="@+id/wst1"
+        android:layout_marginTop="27dp"
+        android:hint="    Email"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:id="@+id/edloginemail"
+        android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+        app:met_floatingLabel="highlight"
+        android:inputType="textEmailAddress"
+        android:letterSpacing="0.025"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_below="@+id/edloginemail"
+        android:layout_marginTop="27dp"
+        android:hint="    Password"
+        android:id="@+id/edloginpassword"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        app:met_floatingLabel="highlight"
+        android:inputType="textEmailAddress"
+        android:letterSpacing="0.025"
+        android:layout_height="wrap_content" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edloginpassword"
+        android:layout_marginTop="18dp"
+        android:text="Show Password"
+        android:id="@+id/checkboxtoshowpassword"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkboxtoshowpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/btn_signin_background"
+        android:text="Sign In"
+        android:onClick="useSignInAPIMethod"
+        android:id="@+id/buttonsignin"
+        android:textAllCaps="false"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/buttonsignin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/frgtpswd"
+        android:onClick="useForgotPasswordAPIMethod"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="45dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="9dp"
+        android:id="@+id/loginquesmark"
+        android:src="@drawable/info"
+        app:backgroundTint="#4b4b4d" />
+
+</RelativeLayout>

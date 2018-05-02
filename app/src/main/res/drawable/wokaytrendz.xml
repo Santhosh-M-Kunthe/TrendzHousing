@@ -1,0 +1,16 @@
+<animation-list android:id="@+id/selected"
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/aa" android:duration="504" />
+    <item android:drawable="@drawable/ab" android:duration="126" />
+    <item android:drawable="@drawable/b" android:duration="126" />
+    <item android:drawable="@drawable/c" android:duration="126" />
+    <item android:drawable="@drawable/d" android:duration="126" />
+    <item android:drawable="@drawable/e" android:duration="126" />
+    <item android:drawable="@drawable/f" android:duration="126" />
+    <item android:drawable="@drawable/g" android:duration="126" />
+    <item android:drawable="@drawable/h" android:duration="126" />
+    <item android:drawable="@drawable/j" android:duration="126" />
+    <item android:drawable="@drawable/k" android:duration="126" />
+    <item android:drawable="@drawable/l" android:duration="4500" />
+</animation-list>

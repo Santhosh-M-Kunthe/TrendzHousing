@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.siteurl.www.trendzcrm"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".VendorApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Login"
+            android:label="Login"
+            android:noHistory="true" />
+        <activity
+            android:name=".Home"
+            android:label="Home" />
+        <activity
+            android:name=".MyDocuments"
+            android:label="My Documents" />
+        <activity
+            android:name=".FlatDetails"
+            android:label="Flat details"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".TechSupport"
+            android:label="Tech support" />
+        <activity
+            android:name=".AddTicket"
+            android:label="Add enquiry" />
+        <activity
+            android:name=".ChangePassword"
+            android:label="Change password" />
+        <activity
+            android:name=".Logout"
+            android:label="Log out" />
+        <activity
+            android:name=".ViewPagerClass"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".Offers"
+            android:label="Show Interest" />
+        <activity
+            android:name=".CategoryDocs"
+            android:label="Documents" />
+        <activity
+            android:name=".UnitAndProjPics"
+            android:label="Photos"
+            android:theme="@style/TabTheme" />
+        <activity android:name=".PDFview"></activity>
+    </application>
+
+</manifest>

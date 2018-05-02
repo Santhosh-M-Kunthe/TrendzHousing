@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="9dp"
+    android:background="#ffffff"
+    android:maxHeight="300dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="173.7dp">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:maxHeight="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/pdfviewer"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:maxHeight="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/overlapimageview"/>
+
+    <TextView
+        android:id="@+id/pdftv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80ffffff"
+        android:padding="9dp"
+        android:text="Doc name"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+</RelativeLayout>

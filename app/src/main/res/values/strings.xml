@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Trendz CRM</string>
+    <string name="frgtpswd"><u><b>Forgot Password ?</b></u></string>
+    <string name="my_units"><u><b>My units</b></u></string>
+    <string name="view_all_documents"><b>All Photos and documents ➤</b></string>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4b4b4d"
+    android:id="@+id/idforbar"
+    tools:context="in.siteurl.www.trendzcrm.MyDocuments">
+    <!--   android:background="#4b4b4d"
+     -->
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flat"
+        android:shadowColor="#c6942c"
+        android:textColor="#c6942c"
+        android:layout_margin="3dp"
+        android:id="@+id/flatchkbox"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Block"
+        android:textColor="#c6942c"
+        android:layout_margin="3dp"
+        android:layout_toEndOf="@+id/flatchkbox"
+        android:id="@+id/blockchkbox"
+        android:layout_toRightOf="@+id/flatchkbox" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_toEndOf="@+id/projectchkbox"
+        android:text="My Docs"
+        android:id="@+id/mydocschkbox"
+        android:textColor="#c6942c"
+        android:layout_toRightOf="@+id/projectchkbox" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project"
+        android:textColor="#c6942c"
+        android:layout_margin="3dp"
+        android:layout_toEndOf="@+id/blockchkbox"
+        android:id="@+id/projectchkbox"
+        android:layout_toRightOf="@+id/blockchkbox" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="36dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/centerpicedocs"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/neatlinebackground"
+            android:id="@+id/fornodocs"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:layout_above="@+id/centerpicedocs"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/nodocs"
+                android:visibility="gone"
+                android:text="No related documents available"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/docsDocumentsRecyclerView"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/neatlinebackground"
+            android:layout_margin="9dp"
+            android:padding="12dp"
+            android:id="@+id/fornopics"
+            android:layout_below="@+id/centerpicedocs"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nopics"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:text="No related images available"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/picsDocumentsREcyclerView"/>
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:id="@+id/progress"/>
+    </RelativeLayout>
+</RelativeLayout>

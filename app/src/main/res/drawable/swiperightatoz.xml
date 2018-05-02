@@ -1,0 +1,7 @@
+<animation-list android:id="@+id/selected"
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/swiperighta" android:duration="126" />
+    <item android:drawable="@drawable/swiperightb" android:duration="126" />
+    <item android:drawable="@drawable/swiperightc" android:duration="2000" />
+    </animation-list>

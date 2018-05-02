@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <RelativeLayout
+     android:layout_width="360dp"
+     android:layout_centerInParent="true"
+     android:layout_height="500dp">
+     <TextView
+         android:layout_width="300dp"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:layout_marginBottom="18dp"
+         android:textSize="18dp"
+         android:textColor="#ffffff"
+         android:layout_above="@+id/exit_btn"
+         android:text="Check your internet connection and try again. . ."/>
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:background="@drawable/btn_signin_background"
+         android:text="Exit"
+         android:padding="9dp"
+         android:id="@+id/exit_btn"/>
+ </RelativeLayout>
+</RelativeLayout>

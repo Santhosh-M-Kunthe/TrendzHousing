@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="in.siteurl.www.trendzcrm.Offers">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingBottom="27dp"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/oggerImageview"
+                android:text="Yes, I am interested"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:onClick="finishh"
+                android:layout_marginTop="27dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="27dp"
+                android:background="@drawable/btn_signin_background"
+                android:padding="9dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="21dp"
+                android:gravity="center"
+                android:id="@+id/offerName"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Please wait"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="9dp"
+                android:layout_below="@+id/offerName"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/offerDesc"
+                android:gravity="center"
+                android:layout_marginTop="27dp"
+                android:layout_below="@+id/offerName"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:text="loading. . ."
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/offerDesc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="27dp"
+                android:background="@drawable/neatlinebackground"
+                android:padding="18dp"
+                android:src="@drawable/defaultofferimage"
+                android:layout_marginEnd="27dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_marginTop="9dp"
+                android:id="@+id/oggerImageview"
+                android:layout_height="207dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/techsupporta"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="9dp"
+        android:src="@drawable/techsuppo"
+        app:backgroundTint="#4b4b4d"/>
+
+</android.support.design.widget.CoordinatorLayout>

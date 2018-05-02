@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rlUser"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateuser"
+            android:text="1-1-2018"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_below="@+id/dateuser"
+            android:text="User name"
+            android:id="@+id/nameuser"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="180dp"
+            android:text="Happy new year to all.Happy new year to all.Happy new year to all.Happy new year to all."
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rladmin"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateadmin"
+            android:text="1-1-2018"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_below="@+id/dateadmin"
+            android:text="Admin name"
+            android:id="@+id/nameadmin"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="180dp"
+            android:text="Happy new year to all.Happy new year to all.Happy new year to all.Happy new year to all."
+            android:layout_toRightOf="@+id/dateadmin"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="72dp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlstaff"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/datestaff"
+            android:text="1-1-2018"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_below="@+id/datestaff"
+            android:text="Staff name"
+            android:id="@+id/name"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="180dp"
+            android:text="Happy new year to all.Happy new year to all.Happy new year to all.Happy new year to all."
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
